@@ -1,0 +1,17 @@
+{
+  "name": "react_first_app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "./node_modules/http-server/bin/http-server ./public -p 3000"
+  },
+  "private": true,
+  "dependencies": {
+    "@babel/standalone": "^7.0.0-beta.40",
+    "http-server": "0.11.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.1"
+  }
+}
