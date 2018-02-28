@@ -35,7 +35,12 @@ class Product extends React.Component {
 
 class ProductList extends React.Component {
     render() {
-        const productComponents = window.Data.products.map((product) => (
+        const products = window.Data.products
+            .concat()
+            .sort((a, b) => (
+                b.votes - a.votes
+            ));
+        const productComponents = products.map((product) => (
             <Product
                 key={'product-' + product.id}
                 id={product.id}
