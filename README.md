@@ -407,3 +407,43 @@ class ProductList extends React.Component {
 ```
 
 6. Odśwież stronę
+
+## Ćwiczenie 8
+
+1. Zrób checkout brancha "8-data-from-server-init"
+
+2. Dodaj funkcję getProducts() do client.js
+
+```javascript
+window.client = (function() {
+    function getProducts(success) {
+        return fetch('/api/products', {
+            headers: {
+                Accept: 'application/json',
+            }
+        })
+            .then(checkStatus)
+            .then(parseJSON)
+            .then(success)
+    }
+```
+
+3. Dodaj metodę loadProductsFromServer() do ProductList
+
+```javascript
+    loadProductsFromServer() {
+        window.client.getProducts((data) => {
+            this.setState({ products: data });
+        });
+    }
+```
+
+4. Zmodyfikuj componentDidMount() w ProductList
+
+```javascript
+    componentDidMount() {
+        this.loadProductsFromServer();
+    }
+```
+
+5. Odśwież stronę
