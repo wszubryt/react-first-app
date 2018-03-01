@@ -460,6 +460,12 @@ class ProductList extends React.Component {
 
 ```javascript
 yarn
+yarn server
+```
+
+3. Wykonaj w innym oknie terminala
+
+```javascript
 curl -X GET localhost:3000/api/products
 ```
 
@@ -505,10 +511,4 @@ window.client = (function() {
     }
 ```
 
-4. Uruchom
-
-```javascript
-yarn server
-```
-
-5. Odśwież stronę
+4. Odśwież stronę
