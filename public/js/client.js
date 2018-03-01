@@ -1,4 +1,15 @@
 window.client = (function() {
+    function getProducts(success) {
+        return fetch('/api/products', {
+            headers: {
+                Accept: 'application/json',
+            }
+        })
+            .then(checkStatus)
+            .then(parseJSON)
+            .then(success)
+    }
+
     function checkStatus(response) {
         if (response.status >= 200 && response.status < 300) {
             return response;
@@ -16,6 +27,6 @@ window.client = (function() {
     }
 
     return {
-
+        getProducts,
     }
 }());

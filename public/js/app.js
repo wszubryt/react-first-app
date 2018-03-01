@@ -43,7 +43,13 @@ class ProductList extends React.Component {
     };
 
     componentDidMount() {
-        this.setState({ products: window.Data.products });
+        this.loadProductsFromServer();
+    }
+
+    loadProductsFromServer() {
+        window.client.getProducts((data) => {
+            this.setState({ products: data });
+        });
     }
 
     handleProductUpVote = (productId) => {
