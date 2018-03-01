@@ -460,9 +460,12 @@ class ProductList extends React.Component {
 
 ```javascript
 yarn
+curl -X GET localhost:3000/api/products
 ```
 
-3. Dodaj funkcję getProducts() do client.js
+## Ćwiczenie 9
+
+1. Dodaj funkcję getProducts() do client.js
 
 ```javascript
 window.client = (function() {
@@ -475,10 +478,16 @@ window.client = (function() {
             .then(checkStatus)
             .then(parseJSON)
             .then(success)
-    }
+    };
+    
+    (...)
+
+    return {
+        getProducts,
+    };
 ```
 
-4. Dodaj metodę loadProductsFromServer() do ProductList
+2. Dodaj metodę loadProductsFromServer() do ProductList
 
 ```javascript
     loadProductsFromServer() {
@@ -488,7 +497,7 @@ window.client = (function() {
     }
 ```
 
-5. Zmodyfikuj componentDidMount() w ProductList
+3. Zmodyfikuj componentDidMount() w ProductList
 
 ```javascript
     componentDidMount() {
@@ -496,4 +505,10 @@ window.client = (function() {
     }
 ```
 
-6. Odśwież stronę
+4. Uruchom
+
+```javascript
+yarn server
+```
+
+5. Odśwież stronę
