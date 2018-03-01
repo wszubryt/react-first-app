@@ -1,5 +1,12 @@
 # Podstawy React
 
+## Setup
+
+```javascript
+npm install -g yarn
+yarn
+```
+
 ## Ćwiczenie 1
 
 1. Dodaj do app.js:
@@ -412,7 +419,13 @@ class ProductList extends React.Component {
 
 1. Zrób checkout brancha "8-data-from-server-init"
 
-2. Dodaj funkcję getProducts() do client.js
+2. Wykonaj
+
+```javascript
+yarn
+```
+
+3. Dodaj funkcję getProducts() do client.js
 
 ```javascript
 window.client = (function() {
@@ -428,7 +441,7 @@ window.client = (function() {
     }
 ```
 
-3. Dodaj metodę loadProductsFromServer() do ProductList
+4. Dodaj metodę loadProductsFromServer() do ProductList
 
 ```javascript
     loadProductsFromServer() {
@@ -438,7 +451,7 @@ window.client = (function() {
     }
 ```
 
-4. Zmodyfikuj componentDidMount() w ProductList
+5. Zmodyfikuj componentDidMount() w ProductList
 
 ```javascript
     componentDidMount() {
@@ -446,4 +459,4 @@ window.client = (function() {
     }
 ```
 
-5. Odśwież stronę
+6. Odśwież stronę
