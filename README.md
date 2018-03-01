@@ -7,6 +7,12 @@ npm install -g yarn
 yarn
 ```
 
+Windows:
+```javascript
+npm install -g http-server
+http-server ./public -p 3000
+```
+
 ## Ćwiczenie 1
 
 1. Dodaj do app.js:
