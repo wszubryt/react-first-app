@@ -122,15 +122,48 @@ window.Data = {
             title: 'Pizza margherita',
             description: 'Just pizza margherita.',
             url: '#',
-            votes: 5,
+            votes: 2,
             submitterAvatarUrl: 'images/avatars/avatar.png',
             productImageUrl: 'images/products/pizza-margherita.jpg',
+        },
+        {
+            id: 2,
+            title: 'Pizza pepperoni',
+            description: 'Super spicy pizza pepperoni.',
+            url: '#',
+            votes: 1,
+            submitterAvatarUrl: 'images/avatars/avatar2.png',
+            productImageUrl: 'images/products/pizza-pepperoni.jpg',
+        },
+        {
+            id: 3,
+            title: 'Pizza rucola',
+            description: 'Pizza with rucola and other stuff.',
+            url: '#',
+            votes: 8,
+            submitterAvatarUrl: 'images/avatars/avatar.png',
+            productImageUrl: 'images/products/pizza-rucola.jpeg',
+        },
+        {
+            id: 4,
+            title: 'Pizza capriciosa',
+            description: 'Pizza with mushrooms and stuff.',
+            url: '#',
+            votes: 9,
+            submitterAvatarUrl: 'images/avatars/avatar2.png',
+            productImageUrl: 'images/products/pizza-capriciosa.jpeg',
         },
     ]
 };
 ```
 
-2. Zmodyfikuj ProductList
+2. Dodaj do index.html (przed ostatnim <script>...)
+
+```javascript
+<script src="js/data.js"></script>
+```
+
+3. Zmodyfikuj ProductList
 
 ```javascript
 class ProductList extends React.Component {
@@ -154,7 +187,7 @@ class ProductList extends React.Component {
 }
 ```
 
-3. Zmodyfikuj Product
+4. Zmodyfikuj Product
 
 ```javascript
 class Product extends React.Component {
@@ -193,7 +226,7 @@ class Product extends React.Component {
 }
 ```
 
-4. Odśwież stronę
+5. Odśwież stronę
 
 ## Ćwiczenie 4
 
@@ -305,7 +338,7 @@ class ProductList extends React.Component {
                     </div>
 ```
 
-5. Odśwież stronę
+5. Odśwież stronę i sprawdź czy działa głosowanie
 
 6. Dodaj konstruktor do Product
 
@@ -342,7 +375,9 @@ class ProductList extends React.Component {
             ));
 ```
 
-3. Dodaj metodę do ProductList
+3. Odśwież stronę
+
+4. Dodaj metodę do ProductList
 
 ```javascript
     componentDidMount() {
@@ -350,7 +385,9 @@ class ProductList extends React.Component {
     }
 ```
 
-4. Zmodyfikuj handleProductUpVote()
+5. Odśwież stronę
+
+6. Zmodyfikuj handleProductUpVote() w ProductList
 
 ```javascript
     handleProductUpVote(productId) {
@@ -369,7 +406,7 @@ class ProductList extends React.Component {
     }
 ```
 
-5. Zmodyfikuj konstruktor ProductList
+7. Zmodyfikuj konstruktor ProductList
 
 ```javascript
     constructor(props) {
@@ -382,7 +419,7 @@ class ProductList extends React.Component {
     }
 ```
 
-6. Odśwież stronę
+8. Odśwież stronę
 
 ## Ćwiczenie 7
 
