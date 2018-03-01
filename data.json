@@ -1,38 +1,29 @@
 [
   {
     "id": 1,
-    "title": "Pizza margherita",
-    "description": "Just pizza margherita.",
+    "title": "Pizza OH LA LA PARIS",
+    "description": "Lazur, camembert, ser tarty grana padano, liście świeżego szpinaku, sos czosnkowy.",
     "url": "#",
-    "votes": 2,
-    "submitterAvatarUrl": "images/avatars/avatar.png",
-    "productImageUrl": "images/products/pizza-margherita.jpg"
+    "votes": 7,
+    "submitterAvatarUrl": "images/avatars/avatar3.png",
+    "productImageUrl": "images/products/pizza-1.jpg"
   },
   {
     "id": 2,
-    "title": "Pizza pepperoni",
-    "description": "Super spicy pizza pepperoni.",
+    "title": "Pizza SUNNY BANGKOK",
+    "description": "Grillowany kurczak, czerwona cebula, suszone liście limonki, ziołowy sos pomidorowy.",
     "url": "#",
-    "votes": 1,
-    "submitterAvatarUrl": "images/avatars/avatar2.png",
-    "productImageUrl": "images/products/pizza-pepperoni.jpg"
+    "votes": 6,
+    "submitterAvatarUrl": "images/avatars/avatar3.png",
+    "productImageUrl": "images/products/pizza-2.jpg"
   },
   {
     "id": 3,
-    "title": "Pizza rucola",
-    "description": "Pizza with rucola and other stuff.",
-    "url": "#",
-    "votes": 8,
-    "submitterAvatarUrl": "images/avatars/avatar.png",
-    "productImageUrl": "images/products/pizza-rucola.jpeg"
-  },
-  {
-    "id": 4,
-    "title": "Pizza capriciosa",
-    "description": "Pizza with mushrooms and stuff.",
+    "title": "Pizza CIAO ROMA",
+    "description": "Pizza Szynka dojrzewająca, krem balsamiczny, tarta mozzarella, ziołowy sos pomidorowy.",
     "url": "#",
     "votes": 9,
-    "submitterAvatarUrl": "images/avatars/avatar2.png",
-    "productImageUrl": "images/products/pizza-capriciosa.jpeg"
+    "submitterAvatarUrl": "images/avatars/avatar4.png",
+    "productImageUrl": "images/products/pizza-3.jpg"
   }
 ]
